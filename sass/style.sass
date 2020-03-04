@@ -1,17 +1,24 @@
+$grey: #666666
+$light: #fff
+$blue: #009adf
+$dark: #131313
+$bg-dark: rgba(255, 255, 255, 0.1)
+$bg-light: rgba(255, 255, 255, 0.9)
+
 .footer 
   margin-top: 60px
-  background-color: #131313
+  background-color: $dark
   padding: 59px 0
-  color: #666666
+  color: $grey
   &-policy-link 
     font-size: 12px
   & p 
     margin-bottom: 14px
   & a 
-    color: #666666
+    color: $grey
     text-decoration: none
     &:hover 
-      color: #fff
+      color: $light
   & small 
     display: block
     margin-top: 56px
@@ -28,7 +35,7 @@
     &_phone 
       font-weight: 400
       font-size: 20px
-      color: #009adf
+      color: $blue
   &-social-links
     @extend .footer-contacts;
     & li 
@@ -37,7 +44,7 @@
         display: inline-block
         width: 42px
         height: 42px
-        background-color: rgba(255, 255, 255, 0.1)
+        background-color: $bg-dark
         text-align: center
         border-radius: 50%
         line-height: 42px
@@ -45,5 +52,5 @@
         -webkit-transition: all 0.2s
         transition: all 0.2s
       &:hover 
-        background-color: rgba(255, 255, 255, 0.9)
-        color: #131313
+        background-color: $bg-light
+        color: $dark
